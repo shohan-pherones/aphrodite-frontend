@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="h-[calc(100vh-6rem)] bg-[url('/assets/images/hero-banner.jpg')] bg-no-repeat bg-cover bg-center relative">
+    <section className="h-[calc(100vh-6rem)] bg-[url('/assets/images/hero-banner.jpg')] bg-no-repeat bg-cover bg-center bg-fixed relative">
       {/* OVERLAY */}
       <span className="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent" />
 
