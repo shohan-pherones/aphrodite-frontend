@@ -50,9 +50,7 @@ const Services = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h4 className="text-xl md:text-2xl lg:text-3xl">
-                {service.title}
-              </h4>
+              <h4 className="text-xl md:text-2xl">{service.title}</h4>
               <p>{service.description}</p>
             </div>
           ))}
@@ -71,7 +69,7 @@ const Services = () => {
           </h1>
           <Link
             href="/appointment"
-            className="lg:text-lg xl:text-xl inline-block bg-rose py-4 px-9 rounded-full font-semibold uppercase hover:bg-green transition"
+            className="lg:text-lg xl:text-xl inline-block bg-rose py-4 px-9 rounded-full font-semibold hover:bg-green transition"
           >
             Make an Appointment
           </Link>

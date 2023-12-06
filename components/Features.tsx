@@ -51,9 +51,7 @@ massage & spa center"
                 />
               </div>
               <span className="text-magenta">{feature.subheading}</span>
-              <h4 className="text-xl md:text-2xl lg:text-3xl">
-                {feature.heading}
-              </h4>
+              <h4 className="text-xl md:text-2xl">{feature.heading}</h4>
               <p>{feature.paragraph}</p>
               <Link
                 href="/services"

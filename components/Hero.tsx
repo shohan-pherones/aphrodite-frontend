@@ -21,7 +21,7 @@ const Hero = () => {
         </p>
         <Link
           href="/appointment"
-          className="lg:text-lg xl:text-xl inline-block bg-green py-4 px-9 rounded-full font-semibold uppercase hover:bg-rose transition"
+          className="lg:text-lg xl:text-xl inline-block bg-green py-4 px-9 rounded-full font-semibold hover:bg-rose transition"
         >
           Make an Appointment
         </Link>

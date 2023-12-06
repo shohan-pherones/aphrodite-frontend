@@ -1,5 +1,6 @@
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Pricing from "@/components/Pricing";
 import Services from "@/components/Services";
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Hero />
       <Features />
       <Services />
+      <Pricing />
     </main>
   );
 };
