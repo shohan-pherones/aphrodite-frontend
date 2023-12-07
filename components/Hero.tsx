@@ -23,7 +23,7 @@ const Hero = () => {
           href="/appointment"
           className="lg:text-lg xl:text-xl inline-block bg-green py-4 px-9 rounded-full font-semibold hover:bg-rose transition"
         >
-          Make an Appointment
+          Make an appointment
         </Link>
       </div>
     </section>

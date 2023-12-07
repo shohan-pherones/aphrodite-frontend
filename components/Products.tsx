@@ -62,9 +62,9 @@ const Products = ({ isNative }: { isNative?: boolean }) => {
         <div className="flex justify-center">
           <Link
             href="/products"
-            className="w-32 h-32 rounded-full bg-green text-white flex items-center justify-center whitespace-nowrap lg:text-lg xl:text-xl font-semibold border-2 border-green hover:bg-transparent transition hover:text-green"
+            className="w-36 h-36 rounded-full bg-magenta text-white flex items-center justify-center whitespace-nowrap lg:text-lg xl:text-xl font-semibold border-2 border-magenta hover:bg-transparent transition hover:text-magenta"
           >
-            View More
+            View more
           </Link>
         </div>
       )}

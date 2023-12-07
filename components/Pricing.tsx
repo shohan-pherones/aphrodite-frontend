@@ -105,7 +105,7 @@ const Pricing = ({ isNative }: { isNative?: boolean }) => {
             href="/appointment"
             className="lg:text-lg xl:text-xl inline-block bg-white text-black py-4 px-9 rounded-full font-semibold hover:bg-magenta hover:text-white transition"
           >
-            Make an Appointment
+            Make an appointment
           </Link>
         </div>
       </div>

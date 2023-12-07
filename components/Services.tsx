@@ -71,7 +71,7 @@ const Services = () => {
             href="/appointment"
             className="lg:text-lg xl:text-xl inline-block bg-rose py-4 px-9 rounded-full font-semibold hover:bg-green transition"
           >
-            Make an Appointment
+            Make an appointment
           </Link>
         </div>
       </div>

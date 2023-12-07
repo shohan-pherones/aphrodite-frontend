@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import SectionTitle from "./SectionTitle";
@@ -57,7 +57,7 @@ massage & spa center"
                 href="/services"
                 className="mt-5 w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-magenta transition hover:text-white"
               >
-                <ArrowRight size={18} />
+                <MoveRight size={18} />
               </Link>
             </div>
           ))}
