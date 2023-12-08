@@ -37,6 +37,40 @@ const products = [
     rating: 4.5,
     price: 225,
   },
+  {
+    _id: "5",
+    image: "/assets/images/product-5.webp",
+    category: "Night, Anti-aging, Sensitive",
+    title: "Retinol Night Cream",
+    rating: 4.8,
+    price: 75,
+  },
+  {
+    _id: "6",
+    image: "/assets/images/product-6.webp",
+    category: "Morning, Organic, All Skin Types",
+    title: "Gentle Cleansing Oil",
+    rating: 4.6,
+    price: 30,
+    discount: 10,
+  },
+  {
+    _id: "7",
+    image: "/assets/images/product-7.jpg",
+    category: "Anti-aging, Antioxidants, Firmer",
+    title: "Breast Enhancement Cream",
+    rating: 4.9,
+    price: 55,
+  },
+  {
+    _id: "8",
+    image: "/assets/images/product-8.webp",
+    category: "Morning, Brightening, All Skin Types",
+    title: "Vitamin C Brightening Serum",
+    rating: 4.7,
+    price: 42,
+    discount: 20,
+  },
 ];
 
 const Products = ({ isNative }: { isNative?: boolean }) => {
