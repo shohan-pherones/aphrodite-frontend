@@ -1,9 +1,9 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Lora } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const lora = Lora({ subsets: ["latin"] });
 

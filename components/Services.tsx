@@ -1,29 +1,8 @@
+import { services } from "@/data/services";
 import Image from "next/image";
-import Link from "next/link";
 import SectionTitle from "./SectionTitle";
-
-const services = [
-  {
-    image: "/assets/images/service-1.png",
-    title: "Essential oils",
-    description: "We choose only natural products for our procedures.",
-  },
-  {
-    image: "/assets/images/service-2.png",
-    title: "Rehabilitation",
-    description: "Recovery after the injuries, surgeries and sport events.",
-  },
-  {
-    image: "/assets/images/service-3.png",
-    title: "Spa procedures",
-    description: "Skin treatments for the entire body, face and nails.",
-  },
-  {
-    image: "/assets/images/service-4.png",
-    title: "Relax massage",
-    description: "The best way to get rid of daily stress and recuperate.",
-  },
-];
+import Overlay from "./ui/Overlay";
+import PrimaryLink from "./ui/PrimaryLink";
 
 const Services = () => {
   return (
@@ -60,19 +39,16 @@ const Services = () => {
       {/* BANNER */}
       <div className="h-[60vh] bg-[url('/assets/images/service-banner.jpg')] bg-no-repeat bg-cover bg-center bg-fixed relative">
         {/* OVERLAY */}
-        <span className="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-t from-black/50 to-transparent" />
+        <Overlay />
 
         {/* CONTENTS */}
         <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full z-[2] container py-20 flex flex-col gap-5 items-center justify-center text-center text-white">
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-5xl">
             An incredible spa experience
           </h1>
-          <Link
-            href="/appointment"
-            className="lg:text-lg xl:text-xl inline-block bg-rose py-4 px-9 rounded-full font-semibold hover:bg-green transition"
-          >
+          <PrimaryLink href="/appointment" className="bg-rose hover:bg-green">
             Make an appointment
-          </Link>
+          </PrimaryLink>
         </div>
       </div>
     </section>

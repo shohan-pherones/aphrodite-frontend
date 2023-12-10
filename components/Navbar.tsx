@@ -1,19 +1,11 @@
 "use client";
 
+import { navLinks } from "@/data/navLinks";
 import { cn } from "@/lib/utils";
 import { Menu, ShoppingBag, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/products", label: "Products" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-];
 
 const Navbar = () => {
   const [shouldMobileNavOpen, setShouldMobileNavOpen] =
