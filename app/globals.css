@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* GALLERY STYLES */
+.gallery__container {
+  display: grid;
+  grid-template-areas:
+    ". . a a b b c c"
+    "d d e e b b f ."
+    ". . e e b b f ."
+    ". . e e g g . h"
+    ". . . . g g . h";
+  gap: 2.5rem;
+}
+
+.gallery__child:nth-child(1) {
+  grid-area: a;
+  border-radius: 80px 50px 10px 80px;
+}
+
+.gallery__child:nth-child(2) {
+  grid-area: b;
+  border-radius: 80px 80px 80px 10px;
+}
+
+.gallery__child:nth-child(3) {
+  grid-area: c;
+  border-radius: 10px 80px 80px 50px;
+}
+
+.gallery__child:nth-child(4) {
+  grid-area: d;
+  border-radius: 80px 10px 50px 80px;
+}
+
+.gallery__child:nth-child(5) {
+  grid-area: e;
+  border-radius: 80px 10px 80px 80px;
+}
+
+.gallery__child:nth-child(6) {
+  grid-area: f;
+  border-radius: 80px;
+}
+
+.gallery__child:nth-child(7) {
+  grid-area: g;
+  border-radius: 10px 50px 80px 80px;
+}
+
+.gallery__child:nth-child(8) {
+  grid-area: h;
+  border-radius: 80px;
+}
