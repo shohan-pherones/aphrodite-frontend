@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 const StepBar = ({ activeStep }: { activeStep: 1 | 2 | 3 }) => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between max-w-2xl mx-auto">
       {/* FIRST CIRCLE */}
       <div
         className={cn(
