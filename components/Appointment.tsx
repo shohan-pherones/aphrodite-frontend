@@ -4,6 +4,7 @@ import { useState } from "react";
 import AppointmentForm from "./AppointmentForm";
 import PickDateTime from "./PickDateTime";
 import SelectPackage from "./SelectPackage";
+import StepBar from "./StepBar";
 
 export interface AppointmentFormData {
   id: string;
@@ -35,6 +36,8 @@ const Appointment = () => {
 
   return (
     <section className="min-h-screen container py-20">
+      <StepBar activeStep={activeStep} />
+
       {activeStep === 1 && (
         <SelectPackage
           appointmentData={appointmentData}
@@ -43,6 +46,7 @@ const Appointment = () => {
           setActiveStep={setActiveStep}
         />
       )}
+
       {activeStep === 2 && (
         <PickDateTime
           appointmentData={appointmentData}
@@ -51,6 +55,7 @@ const Appointment = () => {
           setActiveStep={setActiveStep}
         />
       )}
+
       {activeStep === 3 && (
         <AppointmentForm
           appointmentData={appointmentData}

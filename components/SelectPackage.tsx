@@ -1,4 +1,5 @@
 import { AppointmentFormData } from "./Appointment";
+import SectionTitle from "./SectionTitle";
 
 interface SelectPackageProps {
   appointmentData: AppointmentFormData;
@@ -13,7 +14,14 @@ const SelectPackage: React.FC<SelectPackageProps> = ({
   activeStep,
   setActiveStep,
 }) => {
-  return <div>SelectPackage</div>;
+  return (
+    <div className="py-20">
+      <SectionTitle
+        subtitle="Select Package"
+        title="Select one package you want"
+      />
+    </div>
+  );
 };
 
 export default SelectPackage;
