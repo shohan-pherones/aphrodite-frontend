@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-yellow py-20">
-      <div className="container flex items-center justify-between gap-5">
+      <div className="container flex flex-col sm:flex-row sm:items-center justify-between gap-5">
         <p>
           &copy; {new Date().getFullYear()}, Aphrodite Beauty Salon & Spa Ltd.
           All Rights Reserved.
