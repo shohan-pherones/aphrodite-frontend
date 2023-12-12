@@ -5,7 +5,7 @@ import AppointmentForm from "./AppointmentForm";
 import PickDateTime from "./PickDateTime";
 import SelectPackage from "./SelectPackage";
 
-interface AppointmentFormData {
+export interface AppointmentFormData {
   id: string;
   packageId: string;
   date: string;
@@ -39,6 +39,7 @@ const Appointment = () => {
         <SelectPackage
           appointmentData={appointmentData}
           setAppointmentData={setAppointmentData}
+          activeStep={activeStep}
           setActiveStep={setActiveStep}
         />
       )}
@@ -46,6 +47,7 @@ const Appointment = () => {
         <PickDateTime
           appointmentData={appointmentData}
           setAppointmentData={setAppointmentData}
+          activeStep={activeStep}
           setActiveStep={setActiveStep}
         />
       )}
@@ -53,6 +55,7 @@ const Appointment = () => {
         <AppointmentForm
           appointmentData={appointmentData}
           setAppointmentData={setAppointmentData}
+          activeStep={activeStep}
           setActiveStep={setActiveStep}
         />
       )}
