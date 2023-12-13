@@ -2,8 +2,8 @@ import { MobileDateTimePicker } from '@mui/x-date-pickers';
 import dayjs, { Dayjs } from 'dayjs';
 import { MoveLeft, MoveRight } from 'lucide-react';
 import { useState } from 'react';
+import SectionTitle from '../SectionTitle';
 import { AppointmentFormData } from './Appointment';
-import SectionTitle from './SectionTitle';
 
 interface PickDateTimeProps {
   appointmentData: AppointmentFormData;

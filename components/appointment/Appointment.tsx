@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import AppointmentForm from './AppointmentForm';
 import PickDateTime from './PickDateTime';
 import SelectPackage from './SelectPackage';

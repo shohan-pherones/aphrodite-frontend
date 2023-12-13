@@ -2,8 +2,8 @@ import { pricings } from '@/data/pricing';
 import { cn, formatCurrency } from '@/lib/utils';
 import { MoveRight } from 'lucide-react';
 import { useState } from 'react';
+import SectionTitle from '../SectionTitle';
 import { AppointmentFormData } from './Appointment';
-import SectionTitle from './SectionTitle';
 
 interface SelectPackageProps {
   appointmentData: AppointmentFormData;
