@@ -62,7 +62,7 @@ const SelectPackage: React.FC<SelectPackageProps> = ({
           onClick={handleStepOne}
           className='flex items-center gap-2.5 rounded-full bg-black px-5 py-2.5 text-white transition hover:bg-magenta'
         >
-          Next step{' '}
+          Next step
           <span>
             <MoveRight />
           </span>

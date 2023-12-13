@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AppointmentForm from './AppointmentForm';
 import PickDateTime from './PickDateTime';
 import SelectPackage from './SelectPackage';
@@ -9,8 +9,7 @@ import StepBar from './StepBar';
 export interface AppointmentFormData {
   id: string;
   packageId: string;
-  date: string;
-  time: string;
+  dateTime: string;
   user: {
     name: string;
     phone: string;
@@ -24,8 +23,7 @@ const Appointment = () => {
   const [appointmentData, setAppointmentData] = useState<AppointmentFormData>({
     id: '',
     packageId: '',
-    date: '',
-    time: '',
+    dateTime: '',
     user: {
       name: '',
       phone: '',
