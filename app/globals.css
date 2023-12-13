@@ -6,11 +6,11 @@
 .gallery__container {
   display: grid;
   grid-template-areas:
-    ". . a a b b c c"
-    "d d e e b b f ."
-    ". . e e b b f ."
-    ". . e e g g . h"
-    ". . . . g g . h";
+    '. . a a b b c c'
+    'd d e e b b f .'
+    '. . e e b b f .'
+    '. . e e g g . h'
+    '. . . . g g . h';
   gap: 2.5rem;
 }
 

@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
-import Link from "next/link";
+import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 interface PrimaryLinkProps {
   href: string;
@@ -16,7 +16,7 @@ const PrimaryLink: React.FC<PrimaryLinkProps> = ({
     <Link
       href={href}
       className={cn(
-        "lg:text-lg xl:text-xl inline-block bg-green py-4 px-9 rounded-full font-semibold hover:bg-rose transition",
+        'inline-block rounded-full bg-green px-9 py-4 font-semibold transition hover:bg-rose lg:text-lg xl:text-xl',
         className
       )}
     >

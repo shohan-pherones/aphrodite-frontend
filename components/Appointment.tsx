@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import AppointmentForm from "./AppointmentForm";
-import PickDateTime from "./PickDateTime";
-import SelectPackage from "./SelectPackage";
-import StepBar from "./StepBar";
+import { useState } from 'react';
+import AppointmentForm from './AppointmentForm';
+import PickDateTime from './PickDateTime';
+import SelectPackage from './SelectPackage';
+import StepBar from './StepBar';
 
 export interface AppointmentFormData {
   id: string;
@@ -22,20 +22,20 @@ export interface AppointmentFormData {
 const Appointment = () => {
   const [activeStep, setActiveStep] = useState<1 | 2 | 3>(1);
   const [appointmentData, setAppointmentData] = useState<AppointmentFormData>({
-    id: "",
-    packageId: "",
-    date: "",
-    time: "",
+    id: '',
+    packageId: '',
+    date: '',
+    time: '',
     user: {
-      name: "",
-      phone: "",
-      email: "",
-      address: "",
+      name: '',
+      phone: '',
+      email: '',
+      address: '',
     },
   });
 
   return (
-    <section className="min-h-screen container py-20">
+    <section className='container min-h-screen py-20'>
       <StepBar activeStep={activeStep} />
 
       {activeStep === 1 && (

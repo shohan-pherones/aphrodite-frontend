@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { navLinks } from "@/data/navLinks";
-import { cn } from "@/lib/utils";
-import { Menu, ShoppingBag, X } from "lucide-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { navLinks } from '@/data/navLinks';
+import { cn } from '@/lib/utils';
+import { Menu, ShoppingBag, X } from 'lucide-react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 const Navbar = () => {
   const [shouldMobileNavOpen, setShouldMobileNavOpen] =
@@ -15,28 +15,28 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="h-24 bg-white/80 backdrop-blur-lg flex items-center sticky top-0 z-[100]">
-        <nav className="container flex items-center gap-5 justify-between">
+      <header className='sticky top-0 z-[100] flex h-24 items-center bg-white/80 backdrop-blur-lg'>
+        <nav className='container flex items-center justify-between gap-5'>
           {/* LOGO */}
           <Link
             onClick={() => setShouldMobileNavOpen(false)}
-            href="/"
-            className="lowercase text-2xl font-semibold group hover:text-magenta transition"
+            href='/'
+            className='group text-2xl font-semibold lowercase transition hover:text-magenta'
           >
             Aphrodite
-            <span className="text-green group-hover:text-blue transition">
+            <span className='text-green transition group-hover:text-blue'>
               .
             </span>
           </Link>
 
           {/* DESKTOP NAV */}
-          <ul className="hidden md:flex items-center gap-5">
+          <ul className='hidden items-center gap-5 md:flex'>
             {navLinks.map((navLink) => (
               <li key={navLink.href}>
                 <Link
                   href={navLink.href}
-                  className={cn("hover:text-magenta transition", {
-                    "text-green": pathname === navLink.href,
+                  className={cn('transition hover:text-magenta', {
+                    'text-green': pathname === navLink.href,
                   })}
                 >
                   {navLink.label}
@@ -46,30 +46,30 @@ const Navbar = () => {
           </ul>
 
           {/* COMMON NAV */}
-          <div className="flex gap-5 items-center">
+          <div className='flex items-center gap-5'>
             <Link
               onClick={() => setShouldMobileNavOpen(false)}
-              href="/sign-in"
-              className="text-green hover:text-magenta transition"
+              href='/sign-in'
+              className='text-green transition hover:text-magenta'
             >
               Sign in
             </Link>
-            <span className="h-4 w-px bg-gray" />
+            <span className='h-4 w-px bg-gray' />
             <button
-              className="relative group"
+              className='group relative'
               onClick={() => setShouldMobileNavOpen(false)}
             >
               <span>
                 <ShoppingBag size={20} />
               </span>
-              <span className="absolute -right-1 -bottom-2 w-4 h-4 rounded-full bg-green text-xs flex items-center justify-center text-white font-semibold group-hover:bg-magenta transition">
+              <span className='absolute -bottom-2 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-green text-xs font-semibold text-white transition group-hover:bg-magenta'>
                 0
               </span>
             </button>
 
             {/* TOGGLE MOBILE NAV */}
             <button
-              className="inline-block md:hidden hover:text-magenta transition"
+              className='inline-block transition hover:text-magenta md:hidden'
               onClick={() => setShouldMobileNavOpen(!shouldMobileNavOpen)}
             >
               {shouldMobileNavOpen ? <X /> : <Menu />}
@@ -82,14 +82,14 @@ const Navbar = () => {
       {shouldMobileNavOpen && (
         <ul
           onClick={() => setShouldMobileNavOpen(false)}
-          className="fixed z-[99] top-[6rem] left-0 bottom-0 right-0 w-full h-[100%-6rem] flex flex-col md:hidden items-center justify-center gap-5 bg-black text-white text-2xl"
+          className='fixed bottom-0 left-0 right-0 top-[6rem] z-[99] flex h-[100%-6rem] w-full flex-col items-center justify-center gap-5 bg-black text-2xl text-white md:hidden'
         >
           {navLinks.map((navLink) => (
             <li key={navLink.href}>
               <Link
                 href={navLink.href}
-                className={cn("hover:text-rose transition", {
-                  "text-green": pathname === navLink.href,
+                className={cn('transition hover:text-rose', {
+                  'text-green': pathname === navLink.href,
                 })}
               >
                 {navLink.label}
@@ -98,7 +98,7 @@ const Navbar = () => {
           ))}
 
           {/* LOWER BORDER */}
-          <span className="absolute bottom-0 left-0 right-0 h-2 w-full bg-gradient-to-r from-pink to-rose" />
+          <span className='absolute bottom-0 left-0 right-0 h-2 w-full bg-gradient-to-r from-pink to-rose' />
         </ul>
       )}
     </>

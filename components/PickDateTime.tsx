@@ -1,4 +1,4 @@
-import { AppointmentFormData } from "./Appointment";
+import { AppointmentFormData } from './Appointment';
 
 interface PickDateTimeProps {
   appointmentData: AppointmentFormData;
